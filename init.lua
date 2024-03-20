@@ -254,6 +254,8 @@ require('lazy').setup({
     },
     config = function()
       require('nvim-tree').setup {}
+
+      vim.keymap.set('n', '<leader>t', ':NvimTreeFindFileToggle<CR>', { desc = '[T]ree' })
     end,
   },
 
